@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background-image: url("img/suisei.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1000px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.corner-image{
+    height: 100px;
+    position: fixed;
+    bottom : 20px; 
+    right: 20px; 
+    z-index: 1000;
+}
+
+.title-container{
+    color :white;
+    background-image: url(img/suisui.jpg);
+    background-position: center;
+    text-align: center;
+    padding: 30px 0;
+}
+
+nav{
+    background-color:#223a81;
+
+}
+
+#title{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.btn-groups{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.btn-navbar{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 100px 100px 0 0;
+    cursor: pointer;
+}
+
+.btn-navbar:hover{
+    color: black;
+    text-decoration:underline ;
+    background-color: white;
+
+}
+#navbar-icon{
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    display: none;
+
+}
+
+footer{
+    background-color: #223a81;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    row-gap: 20px;
+}
+
+article{
+    width: 80%;
+    border : 3px #5d89c0 solid;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.article-card1 div{
+    display: flex;
+    column-gap: 50px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.ul1{
+    margin-top: 60px;
+}
+
+.ul2{
+    padding-left: 30px;
+}
+
+.article-card3 div{
+    display: flex;
+    column-gap: 50px;
+}
+
+@media only screen and (max-width: 768px){
+    .article-card1 div, .article-card3 div, .article-card4, .article-card1, .article-card2, .article-card3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar-icon {
+        display: block;
+    }
+    
+    .btn-groups {
+        display: none !important;
+       
+    }
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        
+    }
+    iframe{
+        width: 300px;
+        
+    }
+    .btn-navbar{
+        border-radius: 50px;
+    }
+    .ul1{
+        margin-top: 0;
+
+    }
+}
+
